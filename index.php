@@ -48,9 +48,9 @@ Basically, it just submits the form to the same page.
 <!-- <form action="." method="get"> -->
 <!-- <form action="#" method="get"> -->
 <!-- <form action="Same Page" method="get"> -->
-<!-- <form action="anotherPage.php" method="get"> -->
+<form action="anotherPage.php" method="get">
 <!-- <form action="http://klaus-calc.onrender.com/index.php" method="get"> -->
-<form action="https://php-get-post.onrender.com" method="get">
+<!-- <form action="https://php-get-post.onrender.com" method="get"> -->
 
 <label for="first">First Name:</label> 
 <input type="text" id="first" name="first" autocomplete="off">
@@ -62,5 +62,8 @@ Basically, it just submits the form to the same page.
     <button type="reset">Reset</button>
 </div>
 </form>
+<P><a href="mailto:klaus.wenzler@sympatico.ca">Send Mail</a></P>
+<P><a href="tel:+1514-774-1647">🤙</a></P>
+<p><a href="http://localhost:3000/11agetPost/index.php">Return home</a></p>
 </body>
 </html>
