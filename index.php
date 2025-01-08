@@ -1,23 +1,7 @@
 <?php
-// $firstname = $_POST['first'];
-// $lastname= $_POST['last'];
-// echo $firstname," ",$lastname;
-// echo htmlspecialchars($_POST['first'])," ", htmlspecialchars($_POST['last']); #converts any html chars to a string
-// //using a filter to convert special characters
-// $firstname1 = filter_input(INPUT_POST,'first',FILTER_UNSAFE_RAW);
-// $lastname1 = filter_input(INPUT_POST,'last',FILTER_UNSAFE_RAW);
-// echo $firstname," ",$lastname;
-// if(!empty($firstname)&& !empty($lastname)){
-//     echo $firstname," ",$lastname;
-// } else{
-//     echo "Missing Required data.";
-// }
-
-//Alternate way to do the above 
-
 if(isset($_POST['first']) && isset($_POST['last'])){
     echo '<pre>';
-    echo "Post Method Submitted ",htmlspecialchars(print_r($_POST, true));
+    echo "Post Method Submitted to Server",htmlspecialchars(print_r($_POST, true));
     $firstname = $_POST['first'];
     $lastname= $_POST['last'];
     if(!empty($firstname)&& !empty($lastname)){
@@ -27,7 +11,7 @@ if(isset($_POST['first']) && isset($_POST['last'])){
     }
 } elseif (isset($_GET['first']) && isset($_GET['last'])){
     echo '<pre>';
-    echo "GET Method Submitted ",htmlspecialchars(print_r($_GET, true));
+    echo "GET Method Submitted to server",htmlspecialchars(print_r($_GET, true));
     $firstname = $_GET['first'];
     $lastname= $_GET['last'];
     if(!empty($firstname)&& !empty($lastname)){
@@ -61,11 +45,12 @@ Basically, it just submits the form to the same page.
 -->
 <h1>Web Form Processor</h1> 
 <!-- <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get"> -->
-<form action="." method="get">
+<!-- <form action="." method="get"> -->
 <!-- <form action="#" method="get"> -->
 <!-- <form action="Same Page" method="get"> -->
-<!-- <form action="myTestDir/anotherPage.php" method="get"> -->
+<!-- <form action="anotherPage.php" method="get"> -->
 <!-- <form action="http://klaus-calc.onrender.com/index.php" method="get"> -->
+<form action="https://php-get-post.onrender.com" method="get">
 
 <label for="first">First Name:</label> 
 <input type="text" id="first" name="first" autocomplete="off">
