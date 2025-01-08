@@ -58,7 +58,7 @@ Basically, it just submits the form to the same page.
 <input type="text" id="last" name="last" autocomplete="off">
 <div class="buttons">
     <button type="submit">Submit</button>
-    <button type="submit" formmethod="post">Submit Post</button>
+    <button type="submit" form method="post">Submit Post</button>
     <button type="reset">Reset</button>
 </div>
 </form>
